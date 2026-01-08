@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rent a Car Aleksandar | Bitola</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rent a Car Aleksandar Bitola – Reliable cars, fair prices.">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<!-- BOOKING MODAL -->
+<div id="bookingModal" class="booking-modal">
+  <div class="booking-content">
+    <span class="booking-close" onclick="closeBookingModal()">&times;</span>
+    <h2>Book a Car</h2>
+
+    <form id="bookingForm">
+      <input type="text" id="bookingCar" readonly>
+
+      <label>From</label>
+      <input type="date" id="fromDate" required>
+
+      <label>To</label>
+      <input type="date" id="toDate" required>
+
+      <input type="text" id="pickupLocation" placeholder="Pickup location" required>
+      <input type="text" id="clientName" placeholder="Your name" required>
+      <input type="tel" id="clientPhone" placeholder="Phone number" required>
+
+      <button type="submit">Send via WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+<script src="booking.js"></script>
+
+<body>
+
+<header class="page-header">
+  <h1>Family Vans</h1>
+<p>Enjoy spacious comfort, versatile seating, and reliable performance — perfect for family journeys and group travel.</p>
+
+</header>
+
+<section class="car-grid">
+
+  <div class="car-card" data-car="chrysler-pacifica">
+    <div class="image-wrapper">
+      <img src="/photos/chrysler-pacifica-white.jpg" alt="Chrysler Pacifica" class="car-image">
+      <span class="badge family">Family Van</span>
+    </div>
+    <div class="car-info">
+      <h2>Chrysler Pacifica</h2>
+      <div class="specs">
+        <span>2025</span><span>Automatic</span><span>3.6L</span><span>290 HP</span>
+      </div>
+      <div class="colors">
+        <div class="color black" data-color="black"></div>
+        <div class="color silver" data-color="silver"></div>
+        <div class="color white" data-color="white"></div>
+      </div>
+      <div class="price-row">
+        <span class="price">€25<span>/day</span></span>
+        <button class="btn-rate" onclick="openBookingModal('Chrysler Pacifica')">Rent Now</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="car-card" data-car="toyota-sienna">
+    <div class="image-wrapper">
+      <img src="/photos/toyota-sienna-black.jpg" alt="Toyota Sienna" class="car-image">
+      <span class="badge family">Family Van</span>
+    </div>
+    <div class="car-info">
+      <h2>Toyota Sienna</h2>
+      <div class="specs">
+        <span>2025</span><span>Automatic</span><span>Hybrid</span><span>245 HP</span>
+      </div>
+      <div class="colors">
+        <div class="color white" data-color="white"></div>
+        <div class="color black" data-color="black"></div>
+        <div class="color gray" data-color="gray"></div>
+      </div>
+      <div class="price-row">
+        <span class="price">€27<span>/day</span></span>
+        <button class="btn-rate" onclick="openBookingModal('Toyota Sienna')">Rent Now</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="car-card" data-car="honda-odyssey">
+    <div class="image-wrapper">
+      <img src="/photos/honda-odyssey-silver.jpg" alt="Honda Odyssey" class="car-image">
+      <span class="badge family">Family Van</span>
+    </div>
+    <div class="car-info">
+      <h2>Honda Odyssey</h2>
+      <div class="specs">
+        <span>2025</span><span>Automatic</span><span>V-6</span><span>280 HP</span>
+      </div>
+      <div class="colors">
+        <div class="color silver" data-color="silver"></div>
+        <div class="color black" data-color="black"></div>
+        <div class="color white" data-color="white"></div>
+      </div>
+      <div class="price-row">
+        <span class="price">€30<span>/day</span></span>
+        <button class="btn-rate" onclick="openBookingModal('Honda Odyssey')">Rent Now</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="car-card" data-car="kia-carnival">
+    <div class="image-wrapper">
+      <img src="/photos/kia-carnival-white.jpg" alt="Kia Carnival" class="car-image">
+      <span class="badge family">Family Van</span>
+    </div>
+    <div class="car-info">
+      <h2>Kia Carnival</h2>
+      <div class="specs">
+        <span>2025</span><span>Automatic</span><span>Hybrid</span><span>242 HP</span>
+      </div>
+      <div class="colors">
+        <div class="color white" data-color="white"></div>
+        <div class="color black" data-color="black"></div>
+        <div class="color silver" data-color="silver"></div>
+      </div>
+      <div class="price-row">
+        <span class="price">€26<span>/day</span></span>
+        <button class="btn-rate" onclick="openBookingModal('Kia Carnival')">Rent Now</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rent a Car Aleksandar | Bitola</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rent a Car Aleksandar Bitola – 5.0 rated car rental agency with 146 reviews. Reliable cars, border pickup, fair prices.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo" onclick="scrollToSection('home')">
+      <span class="logo-icon"></span>
+      <div class="logo-text">
+        <div class="logo-title">Rent a Car Aleksandar</div>
+        <div class="logo-subtitle">Bitola, North Macedonia</div>
+      </div>
+    </div>
+
+    <nav class="desktop-nav">
+      <a href="#home" onclick="scrollToSection('home')">Overview</a>
+      <a href="#fleet" onclick="scrollToSection('fleet')">Fleet</a>
+      <a href="#reviews" onclick="scrollToSection('reviews')">Reviews</a>
+      <a href="#about" onclick="scrollToSection('about')">About</a>
+      <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+    </nav>
+
+    <div class="header-buttons">
+      <a href="tel:+38970560439" class="btn btn-primary">📞 Call Now</a>
+      <a href="https://wa.me/38970560439" target="_blank" class="btn btn-success">WhatsApp</a>
+    </div>
+
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+      <span class="menu-icon">☰</span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="scrollToSection('home')">Overview</a>
+    <a href="#fleet" onclick="scrollToSection('fleet')">Fleet</a>
+    <a href="#reviews" onclick="scrollToSection('reviews')">Reviews</a>
+    <a href="#about" onclick="scrollToSection('about')">About</a>
+    <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+    <a href="tel:+38970560439" class="btn btn-primary">📞 Call Now</a>
+    <a href="https://wa.me/38970560439" target="_blank" class="btn btn-success">WhatsApp</a>
+  </div>
+</header>
+
+
+<section id="home" class="hero">
+  <!-- WHY CHOOSE US -->
+<section class="why-us">
+  <div class="container">
+    <h2 class="section-title">Why Choose Rent a Car Aleksandar</h2>
+
+    <div class="why-grid">
+      <div class="why-card">
+        🚗
+        <h3>Modern & Clean Cars</h3>
+        <p>All vehicles are fully serviced and insured.</p>
+      </div>
+
+      <div class="why-card">
+        💶
+        <h3>No Hidden Fees</h3>
+        <p>Transparent pricing with no surprises.</p>
+      </div>
+
+      <div class="why-card">
+        📞
+        <h3>24/7 Support</h3>
+        <p>We are always available for our clients.</p>
+      </div>
+
+      <div class="why-card">
+        🔁
+        <h3>Free Cancellation</h3>
+        <p>Flexible booking without extra charges.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="container">
+    <div class="hero-grid">
+
+      <div class="hero-content">
+        <div class="rating-badge">
+          ⭐ 5.0 Rating • 146 Reviews
+        </div>
+        
+        <h1 class="hero-title">
+          Rent a Car <span class="text-blue">Aleksandar</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          Изнајмување автомобили Александар – Битола
+        </p>
+        
+        <p class="hero-description">
+          Trusted car rental agency in Bitola offering reliable vehicles, border pick-up service and honest pricing.
+        </p>
+
+        <div class="hero-buttons">
+          <button onclick="openBookingModal()" class="btn btn-primary btn-lg">
+            🚗 Book a Car
+          </button>
+          <button onclick="scrollToSection('contact')" class="btn btn-outline btn-lg">
+            Contact Us
+          </button>
+        </div>
+
+        <div class="business-info">
+          <div class="info-item">
+            <span class="icon">📍</span>
+            <span>Rashanec, Bitola</span>
+          </div>
+          <div class="info-item">
+            <span class="icon">🕘</span>
+            <span>Open · Closes 5 PM</span>
+          </div>
+          <div class="info-item">
+            <span class="icon">📞</span>
+            <a href="tel:+38970560439">070 560 439</a>
+          </div>
+          <div class="info-item">
+            <span class="icon">📌</span>
+            <span>28VR+VC Bitola</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-container">
+        <div class="hero-image">
+          <img src="https://images.pexels.com/photos/30376850/pexels-photo-30376850.jpeg?w=800&h=600&fit=crop" alt="Luxury car rental">
+        </div>
+        <div class="hero-badge">
+          <div class="badge-number">146+</div>
+          <div class="badge-text">Happy Customers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fleet" class="fleet">
+  <div class="container">
+    <div class="section-header">
+      <h2>Our Vehicle Fleet</h2>
+      <p>Well-maintained cars for every need and budget</p>
+    </div>
+
+    <div class="fleet-grid">
+      <!-- Car 1 -->
+      <div class="car-card">
+        <div class="car-image-container">
+          <img src="https://images.unsplash.com/photo-1587580945215-5d4aabb2c8ef?w=800&h=600&fit=crop" alt="Economy Hatchback">
+          <div class="car-price">€25/day</div>
+        </div>
+        <div class="car-details">
+          <h3>Economy Hatchback</h3>
+          <div class="car-specs">
+            <span>⚙️ Manual/Automatic</span>
+            <span>👥 4-5 Seats</span>
+          </div>
+          <div class="car-features">
+            <div class="feature">✓ Air Conditioning</div>
+            <div class="feature">✓ Radio</div>
+            <div class="feature">✓ Power Steering</div>
+          </div>
+          <a href="EconomyHatchback.html" target="_blank"class="btn btn-primary btn-block">Book This Car</a>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <div class="car-image-container">
+          <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=600&fit=crop" alt="Compact Sedan">
+          <div class="car-price">€35/day</div>
+        </div>
+        <div class="car-details">
+          <h3>Compact Sedan</h3>
+          <div class="car-specs">
+            <span>⚙️ Automatic</span>
+            <span>👥 5 Seats</span>
+          </div>
+          <div class="car-features">
+            <div class="feature">✓ Air Conditioning</div>
+            <div class="feature">✓ Bluetooth</div>
+            <div class="feature">✓ GPS Navigation</div>
+          </div>
+          <a href="Compact Sedan.html" target="_blank" class="btn btn-primary btn-block">Book This Car</a>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <div class="car-image-container">
+          <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&h=600&fit=crop" alt="Premium SUV">
+          <div class="car-price">€55/day</div>
+        </div>
+        <div class="car-details">
+          <h3>Premium SUV</h3>
+          <div class="car-specs">
+            <span>⚙️ Automatic</span>
+            <span>👥 7-8 Seats</span>
+          </div>
+          <div class="car-features">
+            <div class="feature">✓ Leather Seats</div>
+            <div class="feature">✓ Advanced Safety</div>
+            <div class="feature">✓ 4WD</div>
+          </div>
+           <a href="Premium SUV.html" target="_blank" class="btn btn-primary btn-block">Book This Car</a>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <div class="car-image-container">
+          <img src="https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg?w=800&h=600&fit=crop" alt="Luxury Sedan">
+          <div class="car-price">€65/day</div>
+        </div>
+        <div class="car-details">
+          <h3>Luxury Sedan</h3>
+          <div class="car-specs">
+            <span>⚙️ Manual</span>
+            <span>👥 4-5 Seats</span>
+          </div>
+          <div class="car-features">
+            <div class="feature">✓ Premium Interior</div>
+            <div class="feature">✓ Advanced Tech</div>
+            <div class="feature">✓ Comfort Package</div>
+          </div>
+           <a href="Luxury Sedan.html" target="_blank" class="btn btn-primary btn-block">Book This Car</a>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <div class="car-image-container">
+          <img src="https://images.unsplash.com/photo-1527786356703-4b100091cd2c?w=800&h=600&fit=crop" alt="Family Van">
+          <div class="car-price">€70/day</div>
+        </div>
+        <div class="car-details">
+          <h3>Family Van</h3>
+          <div class="car-specs">
+            <span>⚙️ Automatic</span>
+            <span>👥 7-8 Seats</span>
+          </div>
+          <div class="car-features">
+            <div class="feature">✓ Spacious</div>
+            <div class="feature">✓ Entertainment System</div>
+            <div class="feature">✓ Multiple Zones AC</div>
+          </div>
+          <a href="Family Van.html" target="_blank" class="btn btn-primary btn-block">Book This Car</a>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <div class="car-image-container">
+          <img src="https://images.pexels.com/photos/2834653/pexels-photo-2834653.jpeg?w=800&h=600&fit=crop" alt="Luxury SUV">
+          <div class="car-price">€80/day</div>
+        </div>
+        <div class="car-details">
+          <h3>Luxury SUV</h3>
+          <div class="car-specs">
+            <span>⚙️ Automatic</span>
+            <span>👥 7-8 Seats</span>
+          </div>
+          <div class="car-features">
+            <div class="feature">✓ Premium Package</div>
+            <div class="feature">✓ Panoramic Roof</div>
+            <div class="feature">✓ Advanced Driver Assist</div>
+          </div>
+          <a href="Luxury SUV.html" target="_blank" class="btn btn-primary btn-block">Book This Car</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews">
+  <div class="container">
+    <div class="section-header">
+      <h2>Customer Reviews</h2>
+      <p>What our customers say about us</p>
+      <div class="rating-display">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <span class="rating-number">5.0</span>
+        <span class="rating-count">(146 reviews)</span>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-header">
+          <div>
+            <h4>Дмитрий Курилин</h4>
+            <span class="review-date">2 weeks ago</span>
+          </div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <p>Excellent company! Fast, efficient, hassle-free, with the option of pick-up at the border. Highly recommended!</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div>
+            <h4>Emiljan Rexhepi</h4>
+            <span class="review-date">1 month ago</span>
+          </div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <p>The owner is very lovely and polite. He even fixed my own car for free. Amazing service and kindness.</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div>
+            <h4>Maria Stefanova</h4>
+            <span class="review-date">3 weeks ago</span>
+          </div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <p>Best car rental in Bitola! Clean cars, fair prices, and excellent customer service. Will definitely rent again.</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div>
+            <h4>Alexandros Papadopoulos</h4>
+            <span class="review-date">1 week ago</span>
+          </div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <p>Professional service from start to finish. Border pickup was very convenient. The car was in perfect condition.</p>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a href="https://www.google.com/maps/place/Rent+a+Car+Aleksandar/@41.0442547,21.3406843,17z" target="_blank" class="btn btn-outline">
+        View All Google Reviews →
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content">
+        <h2>About Our Agency</h2>
+        <p class="about-description">
+          Rent a Car Aleksandar is a top-rated local agency in Bitola with 146 five-star Google reviews. 
+          We focus on reliability, transparency and customer satisfaction.
+        </p>
+        
+        <div class="features-list">
+          <div class="feature-item">
+            <span class="feature-icon">✓</span>
+            <div>
+              <h4>Border Pick-up Available</h4>
+              <p>We can meet you at the border for your convenience</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-icon">✓</span>
+            <div>
+              <h4>Honest Pricing</h4>
+              <p>No hidden fees, transparent and fair rates</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-icon">✓</span>
+            <div>
+              <h4>Clean & Serviced Vehicles</h4>
+              <p>All cars are regularly maintained and cleaned</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <span class="feature-icon">✓</span>
+            <div>
+              <h4>Friendly Local Support</h4>
+              <p>Personal service from people who care</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="working-hours">
+          <h3>Working Hours</h3>
+          <div class="hours-row">
+            <span>Monday - Saturday:</span>
+            <span class="hours-value">8:00 AM - 5:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span>Sunday:</span>
+            <span class="hours-value">By appointment</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-media">
+        <div class="about-image">
+          <img src="https://images.pexels.com/photos/9139595/pexels-photo-9139595.jpeg?w=800&h=600&fit=crop" alt="Car rental office">
+        </div>
+        
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.9!2d21.3406843!3d41.0442547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAyJzM5LjMiTiAyMcKwMjAnMjYuNSJF!5e0!3m2!1sen!2s!4v1234567890"
+            loading="lazy"
+            title="Location map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container contact-container">
+    <div class="section-header">
+      <h2>Contact & Booking</h2>
+      <p>Get in touch with us for any inquiries</p>
+    </div>
+
+    <div id="statusMessage" class="status-message" style="display: none;"></div>
+
+    <div class="contact-form-card">
+      <form id="contactForm">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" name="name" required placeholder="Enter your name">
+        </div>
+        
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <input type="tel" name="phone" required placeholder="+389 XX XXX XXX">
+        </div>
+        
+        <div class="form-group">
+          <label>Your Message *</label>
+          <textarea name="message" required rows="5" placeholder="Tell us about your rental needs..."></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Send Request</button>
+      </form>
+
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <div class="contact-icon">📞</div>
+          <a href="tel:+38970560439">070 560 439</a>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">💬</div>
+          <a href="https://wa.me/38970560439" target="_blank">WhatsApp</a>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-icon">📍</div>
+          <span>Rashanec, Bitola</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-title">🚗 Rent a Car Aleksandar</div>
+      <p class="footer-location">Bitola, North Macedonia</p>
+      <div class="footer-rating">
+        <span class="stars">⭐⭐⭐⭐⭐</span>
+        <span>5.0 (146 Reviews)</span>
+      </div>
+      <p class="footer-copyright">© 2025 Rent a Car Aleksandar. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Book Your Car</h3>
+      <button class="modal-close" onclick="closeBookingModal()">×</button>
+    </div>
+    
+    <form id="bookingForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" name="name" required placeholder="Full name">
+        </div>
+        
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="email@example.com">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number *</label>
+        <input type="tel" name="phone" required placeholder="+389 XX XXX XXX">
+      </div>
+
+      <div class="form-group">
+        <label>Select Car *</label>
+        <select name="car_type" required id="carSelect">
+          <option value="">Choose a vehicle...</option>
+          <option value="Economy Hatchback">Economy Hatchback - €25/day</option>
+          <option value="Compact Sedan">Compact Sedan - €35/day</option>
+          <option value="Premium SUV">Premium SUV - €55/day</option>
+          <option value="Luxury Sedan">Luxury Sedan - €65/day</option>
+          <option value="Family Van">Family Van - €70/day</option>
+          <option value="Luxury SUV">Luxury SUV - €80/day</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Pick-up Date *</label>
+          <input type="date" name="pickup_date" required>
+        </div>
+        
+        <div class="form-group">
+          <label>Return Date *</label>
+          <input type="date" name="return_date" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Additional Message</label>
+        <textarea name="message" rows="3" placeholder="Any special requests or questions?"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg btn-block">Submit Booking Request</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

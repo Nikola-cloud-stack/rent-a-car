@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rent a Car Aleksandar | Bitola</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rent a Car Aleksandar Bitola – Reliable cars, fair prices.">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<!-- BOOKING MODAL -->
+<div id="bookingModal" class="booking-modal">
+  <div class="booking-content">
+    <span class="booking-close" onclick="closeBookingModal()">&times;</span>
+    <h2>Book a Car</h2>
+
+    <form id="bookingForm">
+      <input type="text" id="bookingCar" readonly>
+
+      <label>From</label>
+      <input type="date" id="fromDate" required>
+
+      <label>To</label>
+      <input type="date" id="toDate" required>
+
+      <input type="text" id="pickupLocation" placeholder="Pickup location" required>
+      <input type="text" id="clientName" placeholder="Your name" required>
+      <input type="tel" id="clientPhone" placeholder="Phone number" required>
+
+      <button type="submit">Send via WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+<script src="booking.js"></script>
+
+<body>
+
+<header class="page-header">
+  <h1>Compact Sedan</h1>
+<p>Reliable, stylish, and comfortable compact sedans for rent — perfect for city trips or long drives.</p>
+</header>
+
+<section class="car-grid">
+
+  <div class="car-card" data-car="bmw-3-series">
+    <div class="image-wrapper">
+      <img src="/photos/bmw-3-series-white.jpg" alt="BMW 3 Series" class="car-image">
+      <span class="badge sedan">Compact Sedan</span>
+    </div>
+    <div class="car-info">
+      <h2>BMW 3 Series</h2>
+      <div class="specs">
+        <span>2021</span><span>Automatic</span><span>2.0L</span><span>180 HP</span>
+      </div>
+      <div class="colors">
+        <div class="color white" data-color="white"></div>
+        <div class="color black" data-color="black"></div>
+        <div class="color red" data-color="red"></div>
+      </div>
+      <div class="price-row">
+        <span class="price">€25<span>/day</span></span>
+        <button class="btn-rate" onclick="openBookingModal('BMW 3 Series')">Rent Now</button>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="car-card" data-car="audi-a4">
+    <div class="image-wrapper">
+      <img src="/photos/audi-a4-white.jpg" alt="Audi A4" class="car-image">
+      <span class="badge sedan">Compact Sedan</span>
+    </div>
+    <div class="car-info">
+      <h2>Audi A4</h2>
+      <div class="specs">
+        <span>2022</span><span>Automatic</span><span>2.0L</span><span>190 HP</span>
+      </div>
+      <div class="colors">
+        <div class="color white" data-color="white"></div>
+        <div class="color blue" data-color="blue"></div>
+        <div class="color gray" data-color="gray"></div>
+      </div>
+      <div class="price-row">
+        <span class="price">€27<span>/day</span></span>
+        <button class="btn-rate" onclick="openBookingModal('Audi A4')">Rent Now</button>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="car-card" data-car="mercedes-benz">
+    <div class="image-wrapper">
+      <img src="/photos/mercedes-benz-white.jpg" alt="Mercedes-Benz C Class" class="car-image">
+      <span class="badge sedan">Compact Sedan</span>
+    </div>
+    <div class="car-info">
+      <h2>Mercedes-Benz C Class</h2>
+      <div class="specs">
+        <span>2021</span><span>Automatic</span><span>2.0L</span><span>255 HP</span>
+      </div>
+      <div class="colors">
+        <div class="color white" data-color="white"></div>
+        <div class="color black" data-color="black"></div>
+        <div class="color silver" data-color="silver"></div>
+      </div>
+      <div class="price-row">
+        <span class="price">€30<span>/day</span></span>
+        <button class="btn-rate" onclick="openBookingModal('Audi A4')">Rent Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="car-card" data-car="alfa romeo-giulia">
+    <div class="image-wrapper">
+      <img src="/photos/alfa romeo-giulia-red.jpg" alt="Alfa Romeo Giulia" class="car-image">
+      <span class="badge sedan">Compact Sedan</span>
+    </div>
+    <div class="car-info">
+      <h2>Alfa Romeo Giulia</h2>
+      <div class="specs">
+        <span>2018</span><span>Automatic</span><span>2.0L</span><span>200 HP</span>
+      </div>
+      <div class="colors">
+        <div class="color red" data-color="red"></div>
+        <div class="color black" data-color="black"></div>
+        <div class="color silver" data-color="silver"></div>
+      </div>
+      <div class="price-row">
+        <span class="price">€26<span>/day</span></span>
+        <button class="btn-rate" onclick="openBookingModal('Audi A4')">Rent Now</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="script1.js"></script>
+</body>
+</html>
