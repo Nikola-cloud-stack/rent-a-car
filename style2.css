@@ -1,0 +1,293 @@
+/* ===============================
+   RESET & BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1e293b 0%, #020617 65%);
+  color: #e5e7eb;
+  line-height: 1.5;
+}
+
+/* ===============================
+   PAGE HEADER
+================================ */
+.page-header {
+  text-align: center;
+  padding: 70px 20px 50px;
+}
+
+.page-header h1 {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.page-header p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+/* ===============================
+   GRID
+================================ */
+.car-grid {
+  max-width: 1350px;
+  margin: auto;
+  padding: 40px 24px 90px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 34px;
+}
+
+/* ===============================
+   CARD
+================================ */
+.car-card {
+  background: rgba(2, 6, 23, 0.88);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.65);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.85);
+}
+
+/* ===============================
+   IMAGE (FULL FIT)
+================================ */
+.image-wrapper {
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+  background: #020617;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* КЛУЧНО */
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.car-card:hover .car-image {
+  transform: scale(1.06);
+}
+
+/* ===============================
+   BADGES
+================================ */
+.badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 7px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 999px;
+  letter-spacing: 0.3px;
+}
+
+/* Badge types */
+.badge.economy {
+  background: rgb(16, 52, 209);
+}
+
+.badge.sedan {
+  background: #38bdf8;
+}
+
+.badge.family {
+  background: #365a06;
+}
+
+.badge.lsedan {
+  background: #a855f7;
+}
+
+.badge.luxury {
+  background: red;
+}
+
+.badge.suv {
+  background: #0c7723;
+}
+
+/* ===============================
+   INFO
+================================ */
+.car-info {
+  padding: 24px;
+}
+
+.car-info h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+/* ===============================
+   SPECS
+================================ */
+.specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.specs span {
+  font-size: 13px;
+  padding: 6px 11px;
+  border-radius: 7px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid #1e293b;
+  color: #cbd5f5;
+}
+
+/* ===============================
+   COLORS
+================================ */
+.colors {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.color {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.color:hover {
+  transform: scale(1.25);
+  border: 2px solid #ffffff;
+}
+
+.color.white  { background: #f8fafc; }
+.color.black  { background: #020617; }
+.color.red    { background: #dc2626; }
+.color.blue   { background: #2563eb; }
+.color.gray   { background: #9ca3af; }
+.color.silver { background: #cbd5e1; }
+
+/* ===============================
+   PRICE & CTA
+================================ */
+.price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.price span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9ca3af;
+  margin-left: 3px;
+}
+
+.btn-rate {
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 11px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-rate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.55);
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 600px) {
+  .page-header h1 {
+    font-size: 34px;
+  }
+
+  .car-grid {
+    padding: 30px 16px 70px;
+  }
+
+  .image-wrapper {
+    height: 190px;
+  }
+}
+
+/* BOOKING MODAL */
+.booking-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.booking-content {
+  background: #020617;
+  padding: 25px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  color: #fff;
+}
+
+.booking-content h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.booking-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.booking-content button {
+  width: 100%;
+  padding: 12px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.booking-close {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+}
